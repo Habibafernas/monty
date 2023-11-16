@@ -54,5 +54,13 @@ typedef struct instruction_s
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
-
+void push(stack_t **head, unsigned int number);
+void f_add(stack_t **head, unsigned int counter);
+void addnode(stack_t **head, int n);
+int execute(char *content, stack_t **head, unsigned int counter, FILE *file);
+void free_stack(stack_t *head);
+ssize_t getline(char **lineptr, size_t *n, FILE *stream);
+void f_stack(stack_t **head, unsigned int counter);
+void addqueue(stack_t **head, int n);
+void f_queue(stack_t **head, unsigned int counter);
 #endif

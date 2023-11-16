@@ -17,11 +17,11 @@ void push(stack_t **head, unsigned int count)
 		for (; bus.arg[m] != '\0'; m++)
 		{
 			if (bus.arg[m] > 57 || bus.arg[m] < 48)
-				flag = 1;
+				f = 1;
 		}
 		if (f == 1)
 		{
-			fprintf(stderr, "L%d: usage: push integer\n", c);
+			fprintf(stderr, "L%d: usage: push integer\n", count);
 			fclose(bus.file);
 			free(bus.content);
 			free_stack(*head);
@@ -30,7 +30,7 @@ void push(stack_t **head, unsigned int count)
 	}
 	else
 	{
-		fprintf(stderr, "L%d: usage: push integer\n", c);
+		fprintf(stderr, "L%d: usage: push integer\n", count);
 		fclose(bus.file);
 		free(bus.content);
 		free_stack(*head);

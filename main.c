@@ -12,7 +12,7 @@ bus_t bus = {NULL, NULL, NULL, 0};
 int main(int argc, char *argv[])
 {
 	char *content;
-	FILE *f;
+	FILE *file;
 	size_t s = 0;
 	ssize_t read_line = 1;
 	stack_t *stack = NULL;
@@ -24,8 +24,8 @@ int main(int argc, char *argv[])
 		exit(EXIT_FAILURE);
 	}
 
-	f = fopen(argv[1], "r");
-	bus.f = f;
+	file = fopen(argv[1], "r");
+	bus.file = file;
 
 	if (!file)
 	{
@@ -36,17 +36,17 @@ int main(int argc, char *argv[])
 	while (read_line > 0)
 	{
 		content = NULL;
-		read_line = getline(&content, &s, f);
+		read_line = getline(&content, &s, file);
 		bus.content = content;
 		counter++;
 
 		if (read_line > 0)
-			execute(content, &stack, counter, f);
+			execute(content, &stack, counter, file);
 
 		free(content);
 	}
 
 	free_stack(stack);
-	fclose(f);
+	fclose(file);
 	return (0);
 }
