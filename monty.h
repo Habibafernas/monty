@@ -73,4 +73,7 @@ void addqueue(stack_t **head, int n);
 void f_queue(stack_t **head, unsigned int counter);
 void pint(stack_t **head, unsigned int counter);
 void pall(stack_t **head, unsigned int count);
+void f_pop(stack_t **head, unsigned int counter);
+void f_swap(stack_t **head, unsigned int counter);
+void f_nop(stack_t **head, unsigned int counter);
 #endif
