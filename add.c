@@ -5,7 +5,6 @@
 * @head: first node
 * @n: new value
 *
-* Return: none
 */
 
 void addnode(stack_t **head, int n)

@@ -26,7 +26,7 @@ void push(stack_t **head, unsigned int count)
 			free(bus.content);
 			free_stack(*head);
 			exit(EXIT_FAILURE);
-	       	}
+		}
 	}
 	else
 	{

@@ -27,7 +27,7 @@ void free_stack(stack_t *head)
  * Return: none
 */
 
-void f_stack(stack_t **head, unsigned int counter)
+void f_stack(stack_t **head, unsigned int count)
 {
 	(void)head;
 	(void)counter;
