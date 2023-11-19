@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 	size_t s = 0;
 	ssize_t read_line = 1;
 	stack_t *stack = NULL;
-	unsigned int counter = 0;
+	unsigned int count = 0;
 
 	if (argc != 2)
 	{
@@ -39,10 +39,10 @@ int main(int argc, char *argv[])
 		content = NULL;
 		read_line = getline(&content, &s, file);
 		bus.content = content;
-		counter++;
+		count++;
 
 		if (read_line > 0)
-			execute(content, &stack, counter, file);
+			execute(content, &stack, count, file);
 
 		free(content);
 	}
