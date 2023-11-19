@@ -55,7 +55,7 @@ void f_pop(stack_t **head, unsigned int counter)
 }
 
 /**
- * f_pint - print top node on stack
+ * pint - print top node on stack
  * @head: pointer to pointer of first node
  * @counter: line counter
  *

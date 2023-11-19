@@ -8,6 +8,7 @@ bus_t bus = {NULL, NULL, NULL, 0};
 * @argc: argument counter
 * @argv: argument vector
 *
+* Return: always 0
 */
 int main(int argc, char *argv[])
 {

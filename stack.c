@@ -22,7 +22,7 @@ void free_stack(stack_t *head)
 /**
  * f_stack - free stack
  * @head: first node(unused)
- * @counter: line counter (unused)
+ * @count: line counter (unused)
  *
  * Return: none
 */
