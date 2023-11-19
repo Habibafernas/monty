@@ -30,7 +30,7 @@ void free_stack(stack_t *head)
 void f_stack(stack_t **head, unsigned int count)
 {
 	(void)head;
-	(void)counter;
+	(void)count;
 
 	bus.lifi = 0;
 }
