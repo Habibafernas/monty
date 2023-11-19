@@ -1,17 +1,17 @@
 #include "monty.h"
 
 /**
-* f_pall - print everything in stack
+* pall - print everything in stack
 * @head: pointer to pointer of first node
-* @counter: line counter (not used)
+* @count: line counter (not used)
 *
 * Return: none
 */
 
-void pall(stack_t **head, unsigned int counter)
+void pall(stack_t **head, unsigned int count)
 {
 	stack_t *h;
-	(void)counter;
+	(void)count;
 
 	h = *head;
 	if (h == NULL)

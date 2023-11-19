@@ -63,5 +63,5 @@ ssize_t getline(char **lineptr, size_t *n, FILE *stream);
 void f_stack(stack_t **head, unsigned int counter);
 void addqueue(stack_t **head, int n);
 void f_queue(stack_t **head, unsigned int counter);
-void pall(stack_t **head, unsigned int counter);
+void pall(stack_t **head, unsigned int count);
 #endif
